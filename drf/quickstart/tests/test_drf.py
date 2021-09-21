@@ -1,5 +1,11 @@
-# from django.test import TestCase
+import pytest
+from rest_framework.reverse import reverse
 
 
-def test():
-    assert 1 == 1
+@pytest.fixture
+def resp(client):
+    return client.get(reverse('rest_framework:login'))
+
+
+def test(resp):
+    assert resp.status_code == 200
