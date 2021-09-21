@@ -1,0 +1,12 @@
+SECRET_KEY='a'
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1,localhost
+
+#AWS_ACCESS_KEY_ID=''
+AWS_ACCESS_KEY_ID=''
+AWS_SECRET_ACCESS_KEY=''
+AWS_STORAGE_BUCKET_NAME=''
+
+DATABASE_URL=postgres://pythonpro:pythonpro@localhost:5434/drfdb
+
+APP_NAME_HEROKU=a
